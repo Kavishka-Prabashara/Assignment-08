@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link href="style/normalize.css">
     <style>
         body {
             background: linear-gradient(to bottom, #0053af 0%, #000000 100%);
         }
+        #title {
+            font-size: 50px;
+            font-family: "Samsung Sans", serif;
+            color: white;
+            margin: 0;
+        }
+
         #container {
             display: grid;
             grid-template-columns: auto;
@@ -14,7 +22,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            height: 100vh;
+            height: 90vh;
         }
 
         .buttons {
@@ -53,6 +61,7 @@
     </style>
 </head>
 <body>
+    <h3 id="title">JavaScript QUE</h3>
     <div id="container">
         <button class="buttons" id="first_task">
             First Task
