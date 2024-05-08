@@ -23,6 +23,7 @@
             align-items: center;
             gap: 20px;
             height: 90vh;
+            position: relative;
         }
 
         .buttons {
@@ -34,21 +35,31 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s; /* Add transition for smooth effect */
+            transition: background-color 0.3s;
             border: black 5px;
             color: #ffffff;
             font-family: "Samsung Sans",serif;
             font-weight: bolder;
             font-size: larger;
+            text-decoration: none;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .buttons:hover {
-            background-color: skyblue; /* Change background color on hover */
+            background-color: skyblue;
             color: black;
         }
         .buttons:active {
-            background-color: #007bff; /* Change to a different color when active */
-            color: white; /* Change text color when active */
+            background-color: #007bff;
+            color: white;
         }
         @media (min-width: 600px) {
             #container {
@@ -63,12 +74,12 @@
 <body>
     <h3 id="title">JavaScript QUE</h3>
     <div id="container">
-        <button class="buttons" id="first_task">
+        <a href="pages/task01.html" class="buttons" id="first_task">
             First Task
-        </button>
-        <button class="buttons" id="second_task">
+        </a>
+        <a href="pages/task02.html" class="buttons" id="second_task">
             Second Task
-        </button>
+        </a>
 
     </div>
 
