@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/style/normalize.css">
     <style>
         body {
-            background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #483D8B;
         }
         #container {
             width: 100vw;
@@ -50,7 +50,19 @@
         </div>
     <script src="/lib/jquery.js"></script>
     <script>
+        let colors=["#191970","#0000CD","#1E90FF","#00BFFF","#87CEFA","#F0FFFF"];
 
+
+        let divArray=document.querySelector("#container").children;
+
+        setInterval(function () {
+
+            for (let i = 0; i < divArray.length; i++) {
+                divArray[i].style.backgroundColor=colors[i];
+            }
+            colors.unshift(colors[5]);
+            colors.pop();
+        },800);
     </script>
     </body>
 </html>
